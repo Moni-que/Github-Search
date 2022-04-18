@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-image: url('./assets/wallpaper.jpg');
+    background-color: black;
+    background-repeat: repeat-y;
+    background-position: fixed;
+    background-size: auto;
+    font-family: 'Gabriela', sans-serif;
+}
