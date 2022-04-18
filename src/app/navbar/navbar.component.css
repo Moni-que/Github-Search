@@ -1,3 +1,4 @@
 .mynav a:hover{
-    color: aqua;
+    background-color: aqua;
+    color: black;
 }
