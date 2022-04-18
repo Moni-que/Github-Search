@@ -7,6 +7,7 @@ import { RepositoryComponent } from './repository/repository.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SearchUserComponent } from './search-user/search-user.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SearchUserComponent } from './search-user/search-user.component';
     RepositoryComponent,
     UserProfileComponent,
     NavbarComponent,
-    SearchUserComponent
+    SearchUserComponent,
+    HttpClientModule
   ],
   imports: [
     BrowserModule,
