@@ -1,0 +1,9 @@
+input::placeholder{
+    color: white;
+}
+.searching{
+    width: 55vw;
+}
+.searching button{
+    width: 15vw;
+}
