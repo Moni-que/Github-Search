@@ -8,6 +8,7 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SearchUserComponent } from './search-user/search-user.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +17,14 @@ import { HttpClientModule } from '@angular/common/http';
     UserProfileComponent,
     NavbarComponent,
     SearchUserComponent,
-    HttpClientModule
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
