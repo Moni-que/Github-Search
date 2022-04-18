@@ -1,1 +1,22 @@
-<app-search-user></app-search-user>
+<div class="container-fluid">
+    <app-search-user></app-search-user>
+    <div class="row">
+        <div class="col md-5">
+            <img src="{{Username.avatar_url}}" alt="">
+        </div>
+        <div class="col md-7">
+            <p>{{Username.name}}</p>
+            <p>{{Username.html_url}}</p>
+            <p>{{Username.public_repositories}}</p>
+        </div>
+    </div>
+    <div class="row">
+        <h3>REPOSITORIES</h3>
+        <div class="col">
+            <h4><a href="{{Repository.html_url}}">{{Repository.name}}</a></h4>
+            <p>{{Repository.name}}</p>
+            <p>{{Repository.description}}</p>
+            <p>Created With:{{Repository.language}}</p>
+        </div>
+    </div>
+</div>
