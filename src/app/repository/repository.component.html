@@ -1,41 +1,12 @@
 <div class="row text-center text-light mt-4">
     <h2>REPOSITORIES</h2>
 </div>
-<!-- <div class="row mt-5">
-    <div class="col">
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
+<div class="row">
+    <div class="col md-12" *ngFor="let repo of repos">
+        <h3><a href="{{repo.html_url}}">{{repo.name}}</a></h3>
+        <p>{{repo.description}}</p>
+        <p>Languages: {{repo.languages}}</p>
+        <p>Created at: {{repo.created_at| dateCount}}</p> 
+
     </div>
-    <div class="col">
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-    </div>
-    <div class="col">
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-    </div>
-    <div class="col">
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-    </div>
-</div> -->
+</div>
