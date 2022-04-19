@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Username } from '../username';
+import { Repository } from '../repository';
+import { SearchService } from '../search-service/search.service';
 
 @Component({
   selector: 'app-user-profile',
@@ -7,9 +10,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserProfileComponent implements OnInit {
 
-  constructor() { }
+  username:Username;
+  repo:any;
 
-  ngOnInit(): void {
+  constructor(public searchService: SearchService) { 
+
   }
 
+  searchUser(username:string){
+    this.searchService.getUserProfile(username).then((success)=>{
+     this.username = this.searchService.username;
+    },
+    (error)=>{
+      console.log(error)
+    });
+    this.searchService.getUserRepo(username).then((success)=>{
+     this.repo = this.searchService.repo;
+    },
+    (error)=>{
+      console.log(error)
+    });
+  }
+
+  ngOnInit(): void {
+    this.searchUser("Moni-que");
+  }
+  
 }

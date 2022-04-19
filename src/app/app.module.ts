@@ -9,6 +9,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SearchUserComponent } from './search-user/search-user.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { DateCountPipe } from './date-count.pipe';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +19,8 @@ import { FormsModule } from '@angular/forms';
     UserProfileComponent,
     NavbarComponent,
     SearchUserComponent,
-    
+    DateCountPipe,
+
   ],
   imports: [
     BrowserModule,
