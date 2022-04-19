@@ -2,7 +2,7 @@
     <h2>REPOSITORIES</h2>
 </div>
 <div class="row">
-    <div class="col md-12" *ngFor="let repo of repos">
+    <div class="col md-12" *ngFor="let rep of repo">
         <h3><a href="{{repo.html_url}}">{{repo.name}}</a></h3>
         <p>{{repo.description}}</p>
         <p>Languages: {{repo.languages}}</p>
