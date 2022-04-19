@@ -1,14 +1,14 @@
 <div class="container-fluid text-light">
-    <app-search-user searchResult="searchUser($event)"></app-search-user>
+    <app-search-user (searchResult)="searchUser($event)"></app-search-user>
     <div class="row">
         <h3 class="text-center">PROFILE</h3>
         <div class="col md-5">
             <img src="{{Username.avatar_url}}" alt="">
         </div>
         <div class="col md-7">
-            <p>{{username.name}}</p>
+            <h4>{{username.name}}</h4>
             <p>{{username.html_url}}</p>
-            <p>{{username.public_repositories}}</p>
+            <p>Repositories: {{username.public_repositories}}</p>
         </div>
     </div>
     <div class="row">

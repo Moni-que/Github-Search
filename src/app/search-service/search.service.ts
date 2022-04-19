@@ -32,13 +32,13 @@ export class SearchService {
         this.username = response;
 
           resolve()
-        })
+        },
 
         error=>{
           this.username.name="User not found"
 
           reject(error)
-          }
+          })
     })
     return promise;
   }

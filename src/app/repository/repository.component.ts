@@ -17,7 +17,7 @@ export class RepositoryComponent implements OnInit {
 
    }
    searchUser(username:string){
-     this.searchService.getUserRepository(username).then((success)=>{
+     this.searchService.getUserProfile(username).then((success)=>{
        this.repo=this.searchService.repo;
      },
      (error)=>{

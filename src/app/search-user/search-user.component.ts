@@ -11,6 +11,7 @@ export class SearchUserComponent implements OnInit {
 
   public userField!:string;
   @Output() searchingResult = new EventEmitter<any>()
+  
   searchingUser(){
     this.searchingResult.emit(this.userField);
   }
