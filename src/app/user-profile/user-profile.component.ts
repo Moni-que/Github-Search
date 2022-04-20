@@ -24,7 +24,7 @@ export class UserProfileComponent implements OnInit {
     (error)=>{
       console.log(error)
     });
-    this.searchService.getUserProfile(username).then((success)=>{
+    this.searchService.getUserProfile(this.repo).then((success)=>{
      this.repo = this.searchService.repo;
     },
     (error)=>{

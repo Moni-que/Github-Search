@@ -15,7 +15,7 @@ export class SearchService {
   constructor(private http:HttpClient) { 
 
     this.repo = new Repository("","","",new Date())
-    this.username = new Username("","",0,"")
+    this.username = new Username("","","")
   }
   getUserProfile(username:string){
     interface ApiResponse{
@@ -24,7 +24,7 @@ export class SearchService {
         avatar_url:string;
         public_repositories:number;
     }
-    let userUrl = "https://api.github.com/"+username+'client_id='+environment.clientId + "&client_secret="+environment.clientSecret;
+    let userUrl = "https://api.github.com/user/"+username+'client_id='+environment.clientId + "&client_secret="+environment.clientSecret;
 
     let promise = new Promise<void>((resolve,reject)=>{
       this.http.get<ApiResponse>(userUrl).toPromise().then (

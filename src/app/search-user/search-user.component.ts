@@ -9,12 +9,14 @@ import { SearchService } from '../search-service/search.service';
 })
 export class SearchUserComponent implements OnInit {
 
-  public userField!:string;
-  @Output() searchingResult = new EventEmitter<any>()
-  
-  searchingUser(){
-    this.searchingResult.emit(this.userField);
+  public userField:any;
+  @Output() searchResult = new EventEmitter<any>()
+
+
+  searchUser(){
+    this.searchResult.emit(this.userField);
   }
+
 
   constructor() { }
 
