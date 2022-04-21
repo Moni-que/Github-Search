@@ -1,4 +1,4 @@
-input::placeholder{
+.tosearch input::placeholder{
     color: white;
 }
 .searching{

@@ -9,16 +9,20 @@ import { SearchService } from '../search-service/search.service';
 })
 export class SearchUserComponent implements OnInit {
 
-  public userField:any;
+  public userField: any;
   @Output() searchResult = new EventEmitter<any>()
-
+public repo:any
 
   searchUser(){
     this.searchResult.emit(this.userField);
   }
+  // searchUser(){
+  //   this.letMeSearchYou.getUserRepository(this.userField).subscribe((data)=>{
+  //     this.repo=data
+  //   })
+  // }
 
-
-  constructor() { }
+  constructor(private letMeSearchYou:SearchService) { }
 
 
   ngOnInit(): void {

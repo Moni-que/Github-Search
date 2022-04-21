@@ -1,12 +1,19 @@
 <div class="row text-center text-light mt-4">
-    <h2>REPOSITORIES</h2>
+    <h4>REPOSITORIES</h4>
 </div>
-<div class="row">
-    <div class="col md-12" *ngFor="let rep of repo">
-        <h3><a href="{{repo.html_url}}">{{repo.name}}</a></h3>
-        <p>{{repo.description}}</p>
-        <p>Languages: {{repo.languages}}</p>
-        <p>Created at: {{repo.created_at| dateCount}}</p> 
-
+<div class="row text-light mx-2">
+    <div class="col-md-4 mt-5" *ngFor="let rep of repo">
+        <div class="text-dark card" style=" height: 18rem;">
+            <div class="card-header">
+                <h3><a class="text-dark" href="{{rep.html_url}}">{{rep.name}}</a></h3>
+            </div>
+            <div class="card-body">
+                <p>{{rep.description}}</p>
+                <p>Languages: {{rep.languages}}</p>
+            </div>
+            <div class="card-footer">
+                <p>Created: {{rep.created_at| dateCount}}</p> 
+            </div>
+        </div>
     </div>
 </div>

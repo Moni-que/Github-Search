@@ -11,29 +11,27 @@ import { SearchService } from '../search-service/search.service';
 export class UserProfileComponent implements OnInit {
 
   username:Username;
-  repo:any;
+  public repo:Repository[];
+  public userField:any
 
-  constructor(public searchService: SearchService) { 
+  constructor(public letMeSearchYou: SearchService) { 
 
   }
 
-  searchUser(username:string){
-    this.searchService.getUserProfile(username).then((success)=>{
-     this.username = this.searchService.username;
+  public searchUser(){
+    this.letMeSearchYou.getUserProfile(this.userField).then((success)=>{
+     this.username = this.letMeSearchYou.username;
     },
     (error)=>{
       console.log(error)
     });
-    this.searchService.getUserProfile(this.repo).then((success)=>{
-     this.repo = this.searchService.repo;
-    },
-    (error)=>{
-      console.log(error)
-    });
+    this.letMeSearchYou.getUserRepository(this.userField).subscribe((data)=>{
+     this.repo = data
+    })
   }
 
   ngOnInit(): void {
-    this.searchUser("Moni-que");
+    // this.searchUser("Moni-que");
   }
   
 }
