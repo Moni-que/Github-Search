@@ -17,7 +17,6 @@ export class UserProfileComponent implements OnInit {
   constructor(public letMeSearchYou: SearchService) { 
 
   }
-
   public searchUser(){
     this.letMeSearchYou.getUserProfile(this.userField).then((success)=>{
      this.username = this.letMeSearchYou.username;
@@ -29,9 +28,7 @@ export class UserProfileComponent implements OnInit {
      this.repo = data
     })
   }
-
   ngOnInit(): void {
-    // this.searchUser("Moni-que");
   }
   
 }

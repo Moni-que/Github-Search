@@ -16,11 +16,6 @@ public repo:any
   searchUser(){
     this.searchResult.emit(this.userField);
   }
-  // searchUser(){
-  //   this.letMeSearchYou.getUserRepository(this.userField).subscribe((data)=>{
-  //     this.repo=data
-  //   })
-  // }
 
   constructor(private letMeSearchYou:SearchService) { }
 

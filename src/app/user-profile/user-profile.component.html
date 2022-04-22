@@ -1,5 +1,4 @@
 <div class="container-fluid text-light text-center">
-    <!-- <app-search-user (searchResult)="searchUser($event)"></app-search-user> -->
         <div class="row text-center">
             <div class="col">
                 <div class="searching input-group mt-5">
@@ -13,10 +12,8 @@
                 <img src="./assets/github-11-128.png" alt="">
             </div>
         </div>
-    
     <div class="row">
         <div class="col-md-12">
-            <!-- <h3 class="text-center">PROFILE</h3> -->
             <img class="myimage" src="{{username.avatar_url}}" alt="">
             <h4>{{username.name}}</h4>
             <p>{{username.html_url}}</p>
@@ -25,7 +22,6 @@
         </div>
     </div>
     <div class="row">
-        <!-- <h3 class="text-center">REPOSITORIES</h3> -->
         <div id='mycolumn' class="col-md-4 mt-5" *ngFor="let rep of repo">
             <div class="text-dark card" style=" height: 18rem;">
                 <div class="card-header">
@@ -42,5 +38,4 @@
         </div>
     </div>
     <footer>Made with love by Bambi</footer>
-
 </div>    
