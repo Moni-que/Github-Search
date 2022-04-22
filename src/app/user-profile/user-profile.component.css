@@ -4,3 +4,12 @@
 .myimage{
     height: 50vh;
 }
+input::placeholder{
+    color: white;
+}
+.searching button{
+    width: 20vw;
+}
+input{
+    color:green
+}
