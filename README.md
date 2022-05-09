@@ -2,6 +2,12 @@
 
 ### By Monicah Maina
 
+### Screenshot of the Applicaion
+
+![Screenshot from 2022-05-09 06-13-22](https://user-images.githubusercontent.com/93192319/167334527-2c280cdb-19ea-42be-9cd0-edbc735328ae.png)
+![Screenshot from 2022-05-09 06-13-32](https://user-images.githubusercontent.com/93192319/167334540-f4340096-8f53-4517-b2e2-6693c5e2d15d.png)
+![Screenshot from 2022-05-09 06-13-40](https://user-images.githubusercontent.com/93192319/167334552-b63353b0-8a78-4e89-b0c3-d41a70879456.png)
+
 ## Table Of content
 
 + [Description](#description)
